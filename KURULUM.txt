@@ -1,0 +1,15 @@
+CRYPTOSCOPE — ANDROID ANA EKRAN KISAYOLU / PWA
+
+Bu klasör bir PWA paketidir. Ana ekrana uygulama gibi eklenmesi için HTTPS üzerinden yayımlanmalıdır; yalnızca HTML dosyasını telefona indirmek tek başına kurulum yapmaz.
+
+EN KOLAY YAYINLAMA (GitHub Pages):
+1. GitHub'da yeni bir repository oluştur.
+2. Bu klasördeki index.html, manifest.webmanifest, sw.js ve icon.svg dosyalarını repository ana dizinine yükle.
+3. Repository Settings > Pages bölümünden yayınlamayı aç (Deploy from a branch, main / root).
+4. GitHub Pages'in verdiği HTTPS adresini Android telefonda Chrome ile aç.
+5. Chrome menüsü (⋮) > “Uygulamayı yükle” veya “Ana ekrana ekle” seçeneğine dokun.
+
+NOTLAR:
+- API verileri internet bağlantısı gerektirir ve CoinGecko istek limitlerine tabi olabilir.
+- Service worker yalnızca uygulama dosyalarını çevrimdışı açılış için önbelleğe alır; API verilerini önbelleğe almaz.
+- İstersen daha basit yöntem: mevcut HTML dosyasını Chrome'da açılabilen bir web adresinde yayımla, ardından Chrome menüsünden “Ana ekrana ekle” seç.
